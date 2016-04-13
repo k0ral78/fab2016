@@ -172,7 +172,7 @@ program-usbtiny-fuses: $(PROJECT).hex
 <p>The indented lines are the real commands you can also type in command line accurately replacing the variables.<br />
 <code>program-usbtiny</code> is what you need to upload the code into the board. <strong>Be careful</strong> that maybe you need root privileges to upload the code. I needed to use sudo: <code>sudo make program-usbtiny</code>.</p>
 
-<p><img src="/img/7th-week/emb-prog1.jpg" alt="program usbtiny error" /></p>
+<p><img class="img-responsive" src="/img/7th-week/emb-prog1.jpg" alt="program usbtiny error" /></p>
 
 <p><code>program-usbtiny-fuses</code> is useful to write the fuses on the attiny.</p>
 
@@ -256,20 +256,20 @@ in <code>ISR(INT0_vect)</code> function.</p>
 <h4 id="first-steps-with-psoc"><strong>First steps with PSoC</strong></h4>
 
 <p>This is the PSoC 4 CY8CKIT-049 4xxx Prototyping Kits<br />
-<img src="http://www.cypress.com/fckimages/myresources/CY8CKit-049_full_img.jpg" height="auto" width="600" alt="program usbtiny error" /></p>
+<img class="img-responsive" src="http://www.cypress.com/fckimages/myresources/CY8CKit-049_full_img.jpg" height="auto" width="600" alt="program usbtiny error" /></p>
 
 <p>I followed this <a href="http://www.cypress.com/?docID=48142">guide</a> doing first examples. Even if I did these examples with success I feel that I have to go in depth to understand what I can really do with this board and which are its pros and cons.<br />
 Here below where you can modify the delay of blinking LED.</p>
 
-<p><img src="/img/7th-week/psoc/psoc1.jpg" alt="psoc - delay value" /></p>
+<p><img class="img-responsive" src="/img/7th-week/psoc/psoc1.jpg" alt="psoc - delay value" /></p>
 
 <p>In order to get the board ready to upload your code you have to push the button (there is only one button) <strong>while</strong> you connect it to the USB port. You will see the blue LED blinking fast.</p>
 
-<p><img src="/img/7th-week/psoc/psoc2.jpg" alt="psoc - first successful upload" /></p>
+<p><img class="img-responsive" src="/img/7th-week/psoc/psoc2.jpg" alt="psoc - first successful upload" /></p>
 
 <p>Here below the example about using the UART. The characters are duplicated because of <em>local echo</em> option in PutTy. In this way you can see what you type and what you receive from the board.</p>
 
-<p><img src="/img/7th-week/psoc/psoc3.jpg" alt="psoc - UART code example" /></p>
+<p><img class="img-responsive" src="/img/7th-week/psoc/psoc3.jpg" alt="psoc - UART code example" /></p>
 
 <p>I am curious about going in depth with this board. I hope I will find more simple examples :)</p>
 
