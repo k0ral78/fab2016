@@ -100,16 +100,18 @@
         <div class="row">        	
         
         <h2 id="week-6---electronics-design"><strong>Week 6 - Electronics design</strong></h2>
+<p><br /></p>
 
-<p>This week electronic again, but this time we have to design our first board. Designing electronic was something I always wanted to learn and this is the right opportunity. In this assignment we have to design and mill the hello board. This was quite easy thanks to my local instructor <a href="https://vimeo.com/120501993">tutorial</a>. The tricky thing was adding one LED and one button re-designing the traces without crossing them. In the end we have to solder all the components and to test the board uploading an example of code. Here below the summary and my experience with Eagle. 
-<br /><br />
-Summary:</p>
+<h2 id="summary"><strong>Summary:</strong></h2>
 
 <ul>
   <li><a href="#eagle">Eagle</a></li>
   <li><a href="#conclusions">Conclusions</a></li>
   <li><a href="#project-files">Files</a></li>
 </ul>
+
+<p>This week electronic again, but this time we have to design our first board. Designing electronic was something I always wanted to learn and this is the right opportunity. In this assignment we have to design and mill the hello board. This was quite easy thanks to my local instructor <a href="https://vimeo.com/120501993">tutorial</a>. The tricky thing was adding one LED and one button re-designing the traces without crossing them. In the end we have to solder all the components and to test the board uploading an example of code. Here below the summary and my experience with Eagle. 
+<br /></p>
 
 <p><br /></p>
 
@@ -123,7 +125,7 @@ Summary:</p>
 
 <p><img class="img-responsive" src="/img/6th-week/eagle/eagle2.jpg" alt="eagle schematic - first components" /></p>
 
-<p>In correspondence to schematic view Eagle gives you the <strong>board view</strong>. This is where you have to work to decide how your circuit will be physically built by the milling machine.</p>
+<p>In correspondence to schematic view Eagle, gives you the <strong>board view</strong>. This is where you have to work to decide how your circuit will be physically built by the milling machine.</p>
 
 <p><img class="img-responsive" src="/img/6th-week/eagle/eagle3.jpg" alt="eagle board - first components" /></p>
 
@@ -131,11 +133,11 @@ Summary:</p>
 
 <p><img class="img-responsive" src="/img/6th-week/eagle/eagle6.jpg" alt="eagle schematic - first connections" /></p>
 
-<p>When you do the first connections you can see that in board view there are some yellow lines. These lines are the unrouted connections, that is Eagle tells you that you have to decide which will be the real trace and you have to design it. Below you can also see how are placed the Attiny44 and the AVRISPSMD. The first one is with the first pin (where you can see the white circle) on the top left corner. The second one (below the Attiny) has to be with the first pin on the top right corner. This is quite a standard disposal.</p>
+<p>When you do the first connections you can see that in board view there are some yellow lines. These lines are the <strong>unrouted connections</strong>, that is Eagle tells you that you have to decide which will be the real trace and you have to design it. Below you can also see how are placed the Attiny44 and the AVRISPSMD. The first one is located with the first pin (where you can see the white circle) on the top left corner. The second one (below the Attiny) has to be located with the first pin on the top right corner. This is quite a standard disposal.</p>
 
 <p><img class="img-responsive" src="/img/6th-week/eagle/eagle9.jpg" alt="eagle board - first connections" /></p>
 
-<p>After a bit of designing I realized that the capacitor and the resonator was not the one I chose from the library. Choosing the right component it is not so easy. I tried to look at the drawing during the tutorial and I also looked at the package dimension. We used 1206 packages. You can find more details about SMD packages dimensions <a href="http://www.microbuilder.eu/Tutorials/Fundamentals/SMDPackages.aspx">here</a>.</p>
+<p>After a bit of designing I realized that the capacitor and the resonator was not the one I chose from the library. Choosing the right component it is not so easy. I tried to look at the drawing during the tutorial and I also looked at the package dimension. <span style="color: red"> <strong>We used 1206 packages</strong> </span>. You can find more details about SMD packages dimensions <a href="http://www.microbuilder.eu/Tutorials/Fundamentals/SMDPackages.aspx">here</a>.</p>
 
 <p><img class="img-responsive" src="/img/6th-week/eagle/eagle12.jpg" alt="eagle schematic - right capacitor and resonator" /></p>
 
@@ -181,7 +183,7 @@ Summary:</p>
 
 <p>Now I had to add one button and one LED. First of all I had to understand which are the input/output pins of the Attiny. Reading the manual you can see that from PA0 to PA7 you have all the I/O pins. Pins are enumerated in the schematic view, but more important is to understand pins numeration in the board view because you have to place the components in such a way that it will be easy to design the connections avoiding to cross the other ones you have already done. The first pin was the one with the little dot (white circle in the board view) and in counterclockwise manner you will have the other pins.</p>
 
-<p>In the beginning I added the button in pin 10 but that pin was on the right of the Attiny and it was very difficult to find the right place location to connect the button without crossing the other lines I already did. I spent some time to think and it was a little bit frustrating, but in the end my local instructor helped me to solve my problem. It was quite easy but I still don’t have the right mental agility. More practice will help me :) Another trick is to let the lines go under some components. For example you can see the lines under the Attiny but you can also do lines passing under the resistor on under the button. Moreover, you have to know that the button has four pins but they are connected in pairs so it is enough if you connect two pins, that is 1 or 2 and 3 or 4.</p>
+<p>In the beginning I added the button in pin 10 but that pin was on the right of the Attiny and it was very difficult to find the right place location to connect the button without crossing the other lines I already did. I spent some time to think and it was a little bit frustrating, but in the end my local instructor helped me to solve my problem. It was quite easy but I still don’t have the right mental agility. More practice will help me :) Another <span style="color: red"><strong>trick</strong> </span> is to let the <span style="text-decoration: underline"> lines go under some components</span>. For example you can see the lines under the Attiny but you can also do lines passing under the resistor on under the button. Moreover, you have to know that the button has four pins but they are connected in pairs so it is enough if you connect two pins, that is 1 or 2 and 3 or 4.</p>
 
 <p>In the end I had this board below</p>
 
@@ -220,6 +222,8 @@ can find:</p>
   <li>png files to etch and to drill the board</li>
   <li>Eagle schematic and board file</li>
 </ul>
+
+<p><br /></p>
 
 
         
